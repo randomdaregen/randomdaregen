@@ -1,0 +1,11 @@
+async function openDare(category){
+  document.getElementById('modal').style.display = 'flex';
+  const res = await fetch(`json/${category}.json`);
+  const arr = await res.json();
+  const txt = arr[Math.floor(Math.random()*arr.length)];
+  document.getElementById('modal-title').innerText = category.charAt(0).toUpperCase()+category.slice(1) + ' Dare';
+  document.getElementById('modal-text').innerText = txt;
+}
+function closeModal(){
+  document.getElementById('modal').style.display = 'none';
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dare Challenge Hub</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="brand">Dare Hub</a>
+    <div><a href="about.html">About</a> | <a href="contact.html">Contact</a></div>
+  </nav>
+
+  <header>
+    <h1>Select a Category</h1>
+  </header>
+
+  <main class="grid-container">
+    <div class="card" onclick="openDare('friends')">
+      <img src="https://via.placeholder.com/200x150?text=Friends" alt="Friends">
+      <h3>Friends</h3>
+    </div>
+    <div class="card" onclick="openDare('couples')">
+      <img src="https://via.placeholder.com/200x150?text=Couples" alt="Couples">
+      <h3>Couples</h3>
+    </div>
+    <div class="card" onclick="openDare('family')">
+      <img src="https://via.placeholder.com/200x150?text=Family" alt="Family">
+      <h3>Family</h3>
+    </div>
+    <div class="card" onclick="openDare('funny')">
+      <img src="https://via.placeholder.com/200x150?text=Funny" alt="Funny">
+      <h3>Funny</h3>
+    </div>
+    <div class="card" onclick="openDare('hardcore')">
+      <img src="https://via.placeholder.com/200x150?text=Hardcore" alt="Hardcore">
+      <h3>Hardcore</h3>
+    </div>
+    <div class="card" onclick="openDare('trending')">
+      <img src="https://via.placeholder.com/200x150?text=Trending" alt="Trending">
+      <h3>Trending</h3>
+    </div>
+    <div class="card" onclick="openDare('social')">
+      <img src="https://via.placeholder.com/200x150?text=Social+Media" alt="Social Media">
+      <h3>Social Media</h3>
+    </div>
+    <div class="card" onclick="openDare('public')">
+      <img src="https://via.placeholder.com/200x150?text=Public" alt="Public">
+      <h3>Public</h3>
+    </div>
+    <div class="card" onclick="openDare('fitness')">
+      <img src="https://via.placeholder.com/200x150?text=Fitness" alt="Fitness">
+      <h3>Fitness</h3>
+    </div>
+    <div class="card" onclick="openDare('custom')">
+      <img src="https://via.placeholder.com/200x150?text=Custom" alt="Custom">
+      <h3>Custom</h3>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Dare Challenge Hub</footer>
+
+</body>
+</html>
+
